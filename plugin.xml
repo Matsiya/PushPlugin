@@ -17,7 +17,7 @@
 	</engines>
 
     <js-module src="www/PushNotification.js" name="PushNotification">
-        <clobbers target="pushnotification" />
+        <clobbers target="window.pushNotification" />
     </js-module>
 
 	<!-- android -->

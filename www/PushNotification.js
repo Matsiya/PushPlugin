@@ -1,9 +1,6 @@
-var PushNotification = function() {
-    this.name = "PushNotification";
-};
-
 var exec = require("cordova/exec");
 
+function PushNotification() {}
 
 // Call this to register for push notifications. Content of [options] depends on whether we are working with APNS (iOS) or GCM (Android)
 PushNotification.prototype.register = function(successCallback, errorCallback, options) {
@@ -59,5 +56,5 @@ PushNotification.prototype.setApplicationIconBadgeNumber = function(successCallb
 
 //-------------------------------------------------------------------
 
-
-module.exports = new PushNotification();
+var pushNotification = new PushNotification();
+module.exports = pushNotification;
