@@ -16,7 +16,7 @@ PushNotification.prototype.register = function(successCallback, errorCallback, o
         return
     }
 
-	exec(successCallback, errorCallback, "PushPlugin", "register", [options]);
+    exec(successCallback, errorCallback, "PushPlugin", "register", [options]);
 };
 
 // Call this to unregister for push notifications
